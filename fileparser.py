@@ -1,6 +1,6 @@
 import os
 result = []
-work_dir = '/Users/andrei/PycharmProjects/fileparser/files'
+work_dir = './files'
 to_find = 'a'
 
 
@@ -13,7 +13,7 @@ def get_string(target):
     f.close()
 
 
-# проверяем наличие файла "result.txt", если он есть, стираем (оказалось,нахер не надо).
+# проверяем наличие файла "result.txt", если он есть, стираем (оказалось,нахер не надо), так как файл создаётся заново.
 def file_prep():
     if os.path.isfile(os.getcwd() + '/result.txt'):
         print('удаляем')
